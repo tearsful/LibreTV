@@ -2,13 +2,13 @@
 
 // 支持多种 CORS 代理备选
 const DEFAULT_PROXY_URLS = [
-    "/proxy/", // 非Docker/Serverless环境默认本地代理
+    // "/proxy/", // 非Docker/Serverless环境默认本地代理
     // 备选第三方代理（仅Docker部署时注入）
-    // "https://api.codetabs.com/v1/proxy?quest=",
-    // "https://crossorigin.me/",
-    // "https://cors-proxy.htmldriven.com/?url=",
-    // "http://alloworigin.com/get?url=",
-    // "https://api.allorigins.win/get?url="
+     "https://api.codetabs.com/v1/proxy?quest=",
+     "https://crossorigin.me/",
+     "https://cors-proxy.htmldriven.com/?url=",
+     "http://alloworigin.com/get?url=",
+     "https://api.allorigins.win/get?url="
 ];
 
 // 允许通过 window.__ENV__.PROXY_URL 注入（Docker 部署时建议注入）
